@@ -9,6 +9,7 @@
 #include <string>
 #include <memory>
 
+#include <algorithm>
 using namespace sts;
 
 std::int64_t simulationIdx = 0; // for debugging

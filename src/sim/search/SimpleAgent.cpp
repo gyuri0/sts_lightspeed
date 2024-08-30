@@ -11,6 +11,7 @@
 #include <bitset>
 #include <thread>
 #include <mutex>
+#include <algorithm>
 
 using namespace sts;
 
