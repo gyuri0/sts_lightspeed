@@ -181,6 +181,198 @@
 },
 {
   "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\main.dir\\src\\sim\\search\\SpireAgent.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\sim\\search\\SpireAgent.cpp",
+  "file": "C:/dev/sts_lightspeed/src/sim/search/SpireAgent.cpp",
+  "output": "CMakeFiles/main.dir/src/sim/search/SpireAgent.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\apps\\train.cpp.obj -c C:\\dev\\sts_lightspeed\\apps\\train.cpp",
+  "file": "C:/dev/sts_lightspeed/apps/train.cpp",
+  "output": "CMakeFiles/train.dir/apps/train.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\combat\\Actions.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\combat\\Actions.cpp",
+  "file": "C:/dev/sts_lightspeed/src/combat/Actions.cpp",
+  "output": "CMakeFiles/train.dir/src/combat/Actions.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\combat\\BattleContext.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\combat\\BattleContext.cpp",
+  "file": "C:/dev/sts_lightspeed/src/combat/BattleContext.cpp",
+  "output": "CMakeFiles/train.dir/src/combat/BattleContext.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\combat\\CardInstance.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\combat\\CardInstance.cpp",
+  "file": "C:/dev/sts_lightspeed/src/combat/CardInstance.cpp",
+  "output": "CMakeFiles/train.dir/src/combat/CardInstance.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\combat\\CardManager.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\combat\\CardManager.cpp",
+  "file": "C:/dev/sts_lightspeed/src/combat/CardManager.cpp",
+  "output": "CMakeFiles/train.dir/src/combat/CardManager.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\combat\\CardQueue.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\combat\\CardQueue.cpp",
+  "file": "C:/dev/sts_lightspeed/src/combat/CardQueue.cpp",
+  "output": "CMakeFiles/train.dir/src/combat/CardQueue.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\combat\\Monster.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\combat\\Monster.cpp",
+  "file": "C:/dev/sts_lightspeed/src/combat/Monster.cpp",
+  "output": "CMakeFiles/train.dir/src/combat/Monster.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\combat\\MonsterGroup.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\combat\\MonsterGroup.cpp",
+  "file": "C:/dev/sts_lightspeed/src/combat/MonsterGroup.cpp",
+  "output": "CMakeFiles/train.dir/src/combat/MonsterGroup.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\combat\\MonsterMoveDamage.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\combat\\MonsterMoveDamage.cpp",
+  "file": "C:/dev/sts_lightspeed/src/combat/MonsterMoveDamage.cpp",
+  "output": "CMakeFiles/train.dir/src/combat/MonsterMoveDamage.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\combat\\MonsterSpecific.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\combat\\MonsterSpecific.cpp",
+  "file": "C:/dev/sts_lightspeed/src/combat/MonsterSpecific.cpp",
+  "output": "CMakeFiles/train.dir/src/combat/MonsterSpecific.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\combat\\Player.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\combat\\Player.cpp",
+  "file": "C:/dev/sts_lightspeed/src/combat/Player.cpp",
+  "output": "CMakeFiles/train.dir/src/combat/Player.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\game\\Card.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\game\\Card.cpp",
+  "file": "C:/dev/sts_lightspeed/src/game/Card.cpp",
+  "output": "CMakeFiles/train.dir/src/game/Card.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\game\\CombatReward.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\game\\CombatReward.cpp",
+  "file": "C:/dev/sts_lightspeed/src/game/CombatReward.cpp",
+  "output": "CMakeFiles/train.dir/src/game/CombatReward.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\game\\Deck.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\game\\Deck.cpp",
+  "file": "C:/dev/sts_lightspeed/src/game/Deck.cpp",
+  "output": "CMakeFiles/train.dir/src/game/Deck.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\game\\Game.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\game\\Game.cpp",
+  "file": "C:/dev/sts_lightspeed/src/game/Game.cpp",
+  "output": "CMakeFiles/train.dir/src/game/Game.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\game\\GameContext.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\game\\GameContext.cpp",
+  "file": "C:/dev/sts_lightspeed/src/game/GameContext.cpp",
+  "output": "CMakeFiles/train.dir/src/game/GameContext.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\game\\Map.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\game\\Map.cpp",
+  "file": "C:/dev/sts_lightspeed/src/game/Map.cpp",
+  "output": "CMakeFiles/train.dir/src/game/Map.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\game\\Neow.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\game\\Neow.cpp",
+  "file": "C:/dev/sts_lightspeed/src/game/Neow.cpp",
+  "output": "CMakeFiles/train.dir/src/game/Neow.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\game\\SaveFile.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\game\\SaveFile.cpp",
+  "file": "C:/dev/sts_lightspeed/src/game/SaveFile.cpp",
+  "output": "CMakeFiles/train.dir/src/game/SaveFile.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\game\\Shop.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\game\\Shop.cpp",
+  "file": "C:/dev/sts_lightspeed/src/game/Shop.cpp",
+  "output": "CMakeFiles/train.dir/src/game/Shop.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\sim\\BattleSimulator.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\sim\\BattleSimulator.cpp",
+  "file": "C:/dev/sts_lightspeed/src/sim/BattleSimulator.cpp",
+  "output": "CMakeFiles/train.dir/src/sim/BattleSimulator.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\sim\\ConsoleSimulator.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\sim\\ConsoleSimulator.cpp",
+  "file": "C:/dev/sts_lightspeed/src/sim/ConsoleSimulator.cpp",
+  "output": "CMakeFiles/train.dir/src/sim/ConsoleSimulator.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\sim\\PrintHelpers.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\sim\\PrintHelpers.cpp",
+  "file": "C:/dev/sts_lightspeed/src/sim/PrintHelpers.cpp",
+  "output": "CMakeFiles/train.dir/src/sim/PrintHelpers.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\sim\\SimHelpers.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\sim\\SimHelpers.cpp",
+  "file": "C:/dev/sts_lightspeed/src/sim/SimHelpers.cpp",
+  "output": "CMakeFiles/train.dir/src/sim/SimHelpers.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\sim\\search\\Action.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\sim\\search\\Action.cpp",
+  "file": "C:/dev/sts_lightspeed/src/sim/search/Action.cpp",
+  "output": "CMakeFiles/train.dir/src/sim/search/Action.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\sim\\search\\BattleScumSearcher2.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\sim\\search\\BattleScumSearcher2.cpp",
+  "file": "C:/dev/sts_lightspeed/src/sim/search/BattleScumSearcher2.cpp",
+  "output": "CMakeFiles/train.dir/src/sim/search/BattleScumSearcher2.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\sim\\search\\ExpertKnowledge.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\sim\\search\\ExpertKnowledge.cpp",
+  "file": "C:/dev/sts_lightspeed/src/sim/search/ExpertKnowledge.cpp",
+  "output": "CMakeFiles/train.dir/src/sim/search/ExpertKnowledge.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\sim\\search\\GameAction.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\sim\\search\\GameAction.cpp",
+  "file": "C:/dev/sts_lightspeed/src/sim/search/GameAction.cpp",
+  "output": "CMakeFiles/train.dir/src/sim/search/GameAction.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\sim\\search\\ScumSearchAgent2.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\sim\\search\\ScumSearchAgent2.cpp",
+  "file": "C:/dev/sts_lightspeed/src/sim/search/ScumSearchAgent2.cpp",
+  "output": "CMakeFiles/train.dir/src/sim/search/ScumSearchAgent2.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\sim\\search\\SimpleAgent.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\sim\\search\\SimpleAgent.cpp",
+  "file": "C:/dev/sts_lightspeed/src/sim/search/SimpleAgent.cpp",
+  "output": "CMakeFiles/train.dir/src/sim/search/SimpleAgent.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\sim\\search\\SpireAgent.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\sim\\search\\SpireAgent.cpp",
+  "file": "C:/dev/sts_lightspeed/src/sim/search/SpireAgent.cpp",
+  "output": "CMakeFiles/train.dir/src/sim/search/SpireAgent.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/test.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\test.dir\\apps\\test.cpp.obj -c C:\\dev\\sts_lightspeed\\apps\\test.cpp",
   "file": "C:/dev/sts_lightspeed/apps/test.cpp",
   "output": "CMakeFiles/test.dir/apps/test.cpp.obj"
@@ -358,6 +550,12 @@
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/test.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\test.dir\\src\\sim\\search\\SimpleAgent.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\sim\\search\\SimpleAgent.cpp",
   "file": "C:/dev/sts_lightspeed/src/sim/search/SimpleAgent.cpp",
   "output": "CMakeFiles/test.dir/src/sim/search/SimpleAgent.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/test.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\test.dir\\src\\sim\\search\\SpireAgent.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\sim\\search\\SpireAgent.cpp",
+  "file": "C:/dev/sts_lightspeed/src/sim/search/SpireAgent.cpp",
+  "output": "CMakeFiles/test.dir/src/sim/search/SpireAgent.cpp.obj"
 },
 {
   "directory": "C:/dev/sts_lightspeed/build",
@@ -544,5 +742,11 @@
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/small-test.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\small-test.dir\\src\\sim\\search\\SimpleAgent.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\sim\\search\\SimpleAgent.cpp",
   "file": "C:/dev/sts_lightspeed/src/sim/search/SimpleAgent.cpp",
   "output": "CMakeFiles/small-test.dir/src/sim/search/SimpleAgent.cpp.obj"
+},
+{
+  "directory": "C:/dev/sts_lightspeed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/small-test.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\small-test.dir\\src\\sim\\search\\SpireAgent.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\sim\\search\\SpireAgent.cpp",
+  "file": "C:/dev/sts_lightspeed/src/sim/search/SpireAgent.cpp",
+  "output": "CMakeFiles/small-test.dir/src/sim/search/SpireAgent.cpp.obj"
 }
 ]

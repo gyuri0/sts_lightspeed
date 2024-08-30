@@ -59,6 +59,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/src/sim/search/ScumSearchAgent2.cpp.obj.d"
   "CMakeFiles/main.dir/src/sim/search/SimpleAgent.cpp.obj"
   "CMakeFiles/main.dir/src/sim/search/SimpleAgent.cpp.obj.d"
+  "CMakeFiles/main.dir/src/sim/search/SpireAgent.cpp.obj"
+  "CMakeFiles/main.dir/src/sim/search/SpireAgent.cpp.obj.d"
   "libmain.dll.a"
   "main.exe"
   "main.exe.manifest"

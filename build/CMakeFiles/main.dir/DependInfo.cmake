@@ -38,6 +38,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/dev/sts_lightspeed/src/sim/search/GameAction.cpp" "CMakeFiles/main.dir/src/sim/search/GameAction.cpp.obj" "gcc" "CMakeFiles/main.dir/src/sim/search/GameAction.cpp.obj.d"
   "C:/dev/sts_lightspeed/src/sim/search/ScumSearchAgent2.cpp" "CMakeFiles/main.dir/src/sim/search/ScumSearchAgent2.cpp.obj" "gcc" "CMakeFiles/main.dir/src/sim/search/ScumSearchAgent2.cpp.obj.d"
   "C:/dev/sts_lightspeed/src/sim/search/SimpleAgent.cpp" "CMakeFiles/main.dir/src/sim/search/SimpleAgent.cpp.obj" "gcc" "CMakeFiles/main.dir/src/sim/search/SimpleAgent.cpp.obj.d"
+  "C:/dev/sts_lightspeed/src/sim/search/SpireAgent.cpp" "CMakeFiles/main.dir/src/sim/search/SpireAgent.cpp.obj" "gcc" "CMakeFiles/main.dir/src/sim/search/SpireAgent.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

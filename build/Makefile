@@ -130,6 +130,19 @@ main/fast:
 .PHONY : main/fast
 
 #=============================================================================
+# Target rules for targets named train
+
+# Build rule for target.
+train: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 train
+.PHONY : train
+
+# fast build rule for target.
+train/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/build
+.PHONY : train/fast
+
+#=============================================================================
 # Target rules for targets named test
 
 # Build rule for target.
@@ -227,6 +240,30 @@ apps/test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/apps/test.cpp.s
 .PHONY : apps/test.cpp.s
 
+apps/train.obj: apps/train.cpp.obj
+.PHONY : apps/train.obj
+
+# target to build an object file
+apps/train.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/apps/train.cpp.obj
+.PHONY : apps/train.cpp.obj
+
+apps/train.i: apps/train.cpp.i
+.PHONY : apps/train.i
+
+# target to preprocess a source file
+apps/train.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/apps/train.cpp.i
+.PHONY : apps/train.cpp.i
+
+apps/train.s: apps/train.cpp.s
+.PHONY : apps/train.s
+
+# target to generate assembly for a file
+apps/train.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/apps/train.cpp.s
+.PHONY : apps/train.cpp.s
+
 bindings/bindings-util.obj: bindings/bindings-util.cpp.obj
 .PHONY : bindings/bindings-util.obj
 
@@ -257,6 +294,7 @@ src/combat/Actions.obj: src/combat/Actions.cpp.obj
 # target to build an object file
 src/combat/Actions.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/combat/Actions.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/combat/Actions.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/combat/Actions.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/combat/Actions.cpp.obj
 .PHONY : src/combat/Actions.cpp.obj
@@ -267,6 +305,7 @@ src/combat/Actions.i: src/combat/Actions.cpp.i
 # target to preprocess a source file
 src/combat/Actions.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/combat/Actions.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/combat/Actions.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/combat/Actions.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/combat/Actions.cpp.i
 .PHONY : src/combat/Actions.cpp.i
@@ -277,6 +316,7 @@ src/combat/Actions.s: src/combat/Actions.cpp.s
 # target to generate assembly for a file
 src/combat/Actions.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/combat/Actions.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/combat/Actions.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/combat/Actions.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/combat/Actions.cpp.s
 .PHONY : src/combat/Actions.cpp.s
@@ -287,6 +327,7 @@ src/combat/BattleContext.obj: src/combat/BattleContext.cpp.obj
 # target to build an object file
 src/combat/BattleContext.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/combat/BattleContext.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/combat/BattleContext.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/combat/BattleContext.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/combat/BattleContext.cpp.obj
 .PHONY : src/combat/BattleContext.cpp.obj
@@ -297,6 +338,7 @@ src/combat/BattleContext.i: src/combat/BattleContext.cpp.i
 # target to preprocess a source file
 src/combat/BattleContext.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/combat/BattleContext.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/combat/BattleContext.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/combat/BattleContext.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/combat/BattleContext.cpp.i
 .PHONY : src/combat/BattleContext.cpp.i
@@ -307,6 +349,7 @@ src/combat/BattleContext.s: src/combat/BattleContext.cpp.s
 # target to generate assembly for a file
 src/combat/BattleContext.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/combat/BattleContext.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/combat/BattleContext.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/combat/BattleContext.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/combat/BattleContext.cpp.s
 .PHONY : src/combat/BattleContext.cpp.s
@@ -317,6 +360,7 @@ src/combat/CardInstance.obj: src/combat/CardInstance.cpp.obj
 # target to build an object file
 src/combat/CardInstance.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/combat/CardInstance.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/combat/CardInstance.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/combat/CardInstance.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/combat/CardInstance.cpp.obj
 .PHONY : src/combat/CardInstance.cpp.obj
@@ -327,6 +371,7 @@ src/combat/CardInstance.i: src/combat/CardInstance.cpp.i
 # target to preprocess a source file
 src/combat/CardInstance.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/combat/CardInstance.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/combat/CardInstance.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/combat/CardInstance.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/combat/CardInstance.cpp.i
 .PHONY : src/combat/CardInstance.cpp.i
@@ -337,6 +382,7 @@ src/combat/CardInstance.s: src/combat/CardInstance.cpp.s
 # target to generate assembly for a file
 src/combat/CardInstance.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/combat/CardInstance.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/combat/CardInstance.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/combat/CardInstance.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/combat/CardInstance.cpp.s
 .PHONY : src/combat/CardInstance.cpp.s
@@ -347,6 +393,7 @@ src/combat/CardManager.obj: src/combat/CardManager.cpp.obj
 # target to build an object file
 src/combat/CardManager.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/combat/CardManager.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/combat/CardManager.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/combat/CardManager.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/combat/CardManager.cpp.obj
 .PHONY : src/combat/CardManager.cpp.obj
@@ -357,6 +404,7 @@ src/combat/CardManager.i: src/combat/CardManager.cpp.i
 # target to preprocess a source file
 src/combat/CardManager.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/combat/CardManager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/combat/CardManager.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/combat/CardManager.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/combat/CardManager.cpp.i
 .PHONY : src/combat/CardManager.cpp.i
@@ -367,6 +415,7 @@ src/combat/CardManager.s: src/combat/CardManager.cpp.s
 # target to generate assembly for a file
 src/combat/CardManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/combat/CardManager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/combat/CardManager.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/combat/CardManager.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/combat/CardManager.cpp.s
 .PHONY : src/combat/CardManager.cpp.s
@@ -377,6 +426,7 @@ src/combat/CardQueue.obj: src/combat/CardQueue.cpp.obj
 # target to build an object file
 src/combat/CardQueue.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/combat/CardQueue.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/combat/CardQueue.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/combat/CardQueue.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/combat/CardQueue.cpp.obj
 .PHONY : src/combat/CardQueue.cpp.obj
@@ -387,6 +437,7 @@ src/combat/CardQueue.i: src/combat/CardQueue.cpp.i
 # target to preprocess a source file
 src/combat/CardQueue.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/combat/CardQueue.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/combat/CardQueue.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/combat/CardQueue.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/combat/CardQueue.cpp.i
 .PHONY : src/combat/CardQueue.cpp.i
@@ -397,6 +448,7 @@ src/combat/CardQueue.s: src/combat/CardQueue.cpp.s
 # target to generate assembly for a file
 src/combat/CardQueue.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/combat/CardQueue.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/combat/CardQueue.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/combat/CardQueue.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/combat/CardQueue.cpp.s
 .PHONY : src/combat/CardQueue.cpp.s
@@ -407,6 +459,7 @@ src/combat/Monster.obj: src/combat/Monster.cpp.obj
 # target to build an object file
 src/combat/Monster.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/combat/Monster.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/combat/Monster.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/combat/Monster.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/combat/Monster.cpp.obj
 .PHONY : src/combat/Monster.cpp.obj
@@ -417,6 +470,7 @@ src/combat/Monster.i: src/combat/Monster.cpp.i
 # target to preprocess a source file
 src/combat/Monster.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/combat/Monster.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/combat/Monster.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/combat/Monster.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/combat/Monster.cpp.i
 .PHONY : src/combat/Monster.cpp.i
@@ -427,6 +481,7 @@ src/combat/Monster.s: src/combat/Monster.cpp.s
 # target to generate assembly for a file
 src/combat/Monster.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/combat/Monster.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/combat/Monster.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/combat/Monster.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/combat/Monster.cpp.s
 .PHONY : src/combat/Monster.cpp.s
@@ -437,6 +492,7 @@ src/combat/MonsterGroup.obj: src/combat/MonsterGroup.cpp.obj
 # target to build an object file
 src/combat/MonsterGroup.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/combat/MonsterGroup.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/combat/MonsterGroup.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/combat/MonsterGroup.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/combat/MonsterGroup.cpp.obj
 .PHONY : src/combat/MonsterGroup.cpp.obj
@@ -447,6 +503,7 @@ src/combat/MonsterGroup.i: src/combat/MonsterGroup.cpp.i
 # target to preprocess a source file
 src/combat/MonsterGroup.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/combat/MonsterGroup.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/combat/MonsterGroup.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/combat/MonsterGroup.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/combat/MonsterGroup.cpp.i
 .PHONY : src/combat/MonsterGroup.cpp.i
@@ -457,6 +514,7 @@ src/combat/MonsterGroup.s: src/combat/MonsterGroup.cpp.s
 # target to generate assembly for a file
 src/combat/MonsterGroup.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/combat/MonsterGroup.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/combat/MonsterGroup.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/combat/MonsterGroup.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/combat/MonsterGroup.cpp.s
 .PHONY : src/combat/MonsterGroup.cpp.s
@@ -467,6 +525,7 @@ src/combat/MonsterMoveDamage.obj: src/combat/MonsterMoveDamage.cpp.obj
 # target to build an object file
 src/combat/MonsterMoveDamage.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/combat/MonsterMoveDamage.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/combat/MonsterMoveDamage.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/combat/MonsterMoveDamage.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/combat/MonsterMoveDamage.cpp.obj
 .PHONY : src/combat/MonsterMoveDamage.cpp.obj
@@ -477,6 +536,7 @@ src/combat/MonsterMoveDamage.i: src/combat/MonsterMoveDamage.cpp.i
 # target to preprocess a source file
 src/combat/MonsterMoveDamage.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/combat/MonsterMoveDamage.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/combat/MonsterMoveDamage.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/combat/MonsterMoveDamage.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/combat/MonsterMoveDamage.cpp.i
 .PHONY : src/combat/MonsterMoveDamage.cpp.i
@@ -487,6 +547,7 @@ src/combat/MonsterMoveDamage.s: src/combat/MonsterMoveDamage.cpp.s
 # target to generate assembly for a file
 src/combat/MonsterMoveDamage.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/combat/MonsterMoveDamage.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/combat/MonsterMoveDamage.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/combat/MonsterMoveDamage.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/combat/MonsterMoveDamage.cpp.s
 .PHONY : src/combat/MonsterMoveDamage.cpp.s
@@ -497,6 +558,7 @@ src/combat/MonsterSpecific.obj: src/combat/MonsterSpecific.cpp.obj
 # target to build an object file
 src/combat/MonsterSpecific.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/combat/MonsterSpecific.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/combat/MonsterSpecific.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/combat/MonsterSpecific.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/combat/MonsterSpecific.cpp.obj
 .PHONY : src/combat/MonsterSpecific.cpp.obj
@@ -507,6 +569,7 @@ src/combat/MonsterSpecific.i: src/combat/MonsterSpecific.cpp.i
 # target to preprocess a source file
 src/combat/MonsterSpecific.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/combat/MonsterSpecific.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/combat/MonsterSpecific.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/combat/MonsterSpecific.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/combat/MonsterSpecific.cpp.i
 .PHONY : src/combat/MonsterSpecific.cpp.i
@@ -517,6 +580,7 @@ src/combat/MonsterSpecific.s: src/combat/MonsterSpecific.cpp.s
 # target to generate assembly for a file
 src/combat/MonsterSpecific.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/combat/MonsterSpecific.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/combat/MonsterSpecific.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/combat/MonsterSpecific.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/combat/MonsterSpecific.cpp.s
 .PHONY : src/combat/MonsterSpecific.cpp.s
@@ -527,6 +591,7 @@ src/combat/Player.obj: src/combat/Player.cpp.obj
 # target to build an object file
 src/combat/Player.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/combat/Player.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/combat/Player.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/combat/Player.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/combat/Player.cpp.obj
 .PHONY : src/combat/Player.cpp.obj
@@ -537,6 +602,7 @@ src/combat/Player.i: src/combat/Player.cpp.i
 # target to preprocess a source file
 src/combat/Player.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/combat/Player.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/combat/Player.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/combat/Player.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/combat/Player.cpp.i
 .PHONY : src/combat/Player.cpp.i
@@ -547,6 +613,7 @@ src/combat/Player.s: src/combat/Player.cpp.s
 # target to generate assembly for a file
 src/combat/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/combat/Player.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/combat/Player.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/combat/Player.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/combat/Player.cpp.s
 .PHONY : src/combat/Player.cpp.s
@@ -557,6 +624,7 @@ src/game/Card.obj: src/game/Card.cpp.obj
 # target to build an object file
 src/game/Card.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game/Card.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/game/Card.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/game/Card.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/game/Card.cpp.obj
 .PHONY : src/game/Card.cpp.obj
@@ -567,6 +635,7 @@ src/game/Card.i: src/game/Card.cpp.i
 # target to preprocess a source file
 src/game/Card.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game/Card.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/game/Card.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/game/Card.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/game/Card.cpp.i
 .PHONY : src/game/Card.cpp.i
@@ -577,6 +646,7 @@ src/game/Card.s: src/game/Card.cpp.s
 # target to generate assembly for a file
 src/game/Card.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game/Card.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/game/Card.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/game/Card.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/game/Card.cpp.s
 .PHONY : src/game/Card.cpp.s
@@ -587,6 +657,7 @@ src/game/CombatReward.obj: src/game/CombatReward.cpp.obj
 # target to build an object file
 src/game/CombatReward.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game/CombatReward.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/game/CombatReward.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/game/CombatReward.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/game/CombatReward.cpp.obj
 .PHONY : src/game/CombatReward.cpp.obj
@@ -597,6 +668,7 @@ src/game/CombatReward.i: src/game/CombatReward.cpp.i
 # target to preprocess a source file
 src/game/CombatReward.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game/CombatReward.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/game/CombatReward.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/game/CombatReward.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/game/CombatReward.cpp.i
 .PHONY : src/game/CombatReward.cpp.i
@@ -607,6 +679,7 @@ src/game/CombatReward.s: src/game/CombatReward.cpp.s
 # target to generate assembly for a file
 src/game/CombatReward.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game/CombatReward.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/game/CombatReward.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/game/CombatReward.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/game/CombatReward.cpp.s
 .PHONY : src/game/CombatReward.cpp.s
@@ -617,6 +690,7 @@ src/game/Deck.obj: src/game/Deck.cpp.obj
 # target to build an object file
 src/game/Deck.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game/Deck.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/game/Deck.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/game/Deck.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/game/Deck.cpp.obj
 .PHONY : src/game/Deck.cpp.obj
@@ -627,6 +701,7 @@ src/game/Deck.i: src/game/Deck.cpp.i
 # target to preprocess a source file
 src/game/Deck.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game/Deck.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/game/Deck.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/game/Deck.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/game/Deck.cpp.i
 .PHONY : src/game/Deck.cpp.i
@@ -637,6 +712,7 @@ src/game/Deck.s: src/game/Deck.cpp.s
 # target to generate assembly for a file
 src/game/Deck.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game/Deck.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/game/Deck.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/game/Deck.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/game/Deck.cpp.s
 .PHONY : src/game/Deck.cpp.s
@@ -647,6 +723,7 @@ src/game/Game.obj: src/game/Game.cpp.obj
 # target to build an object file
 src/game/Game.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game/Game.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/game/Game.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/game/Game.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/game/Game.cpp.obj
 .PHONY : src/game/Game.cpp.obj
@@ -657,6 +734,7 @@ src/game/Game.i: src/game/Game.cpp.i
 # target to preprocess a source file
 src/game/Game.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game/Game.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/game/Game.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/game/Game.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/game/Game.cpp.i
 .PHONY : src/game/Game.cpp.i
@@ -667,6 +745,7 @@ src/game/Game.s: src/game/Game.cpp.s
 # target to generate assembly for a file
 src/game/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game/Game.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/game/Game.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/game/Game.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/game/Game.cpp.s
 .PHONY : src/game/Game.cpp.s
@@ -677,6 +756,7 @@ src/game/GameContext.obj: src/game/GameContext.cpp.obj
 # target to build an object file
 src/game/GameContext.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game/GameContext.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/game/GameContext.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/game/GameContext.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/game/GameContext.cpp.obj
 .PHONY : src/game/GameContext.cpp.obj
@@ -687,6 +767,7 @@ src/game/GameContext.i: src/game/GameContext.cpp.i
 # target to preprocess a source file
 src/game/GameContext.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game/GameContext.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/game/GameContext.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/game/GameContext.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/game/GameContext.cpp.i
 .PHONY : src/game/GameContext.cpp.i
@@ -697,6 +778,7 @@ src/game/GameContext.s: src/game/GameContext.cpp.s
 # target to generate assembly for a file
 src/game/GameContext.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game/GameContext.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/game/GameContext.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/game/GameContext.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/game/GameContext.cpp.s
 .PHONY : src/game/GameContext.cpp.s
@@ -707,6 +789,7 @@ src/game/Map.obj: src/game/Map.cpp.obj
 # target to build an object file
 src/game/Map.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game/Map.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/game/Map.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/game/Map.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/game/Map.cpp.obj
 .PHONY : src/game/Map.cpp.obj
@@ -717,6 +800,7 @@ src/game/Map.i: src/game/Map.cpp.i
 # target to preprocess a source file
 src/game/Map.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game/Map.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/game/Map.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/game/Map.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/game/Map.cpp.i
 .PHONY : src/game/Map.cpp.i
@@ -727,6 +811,7 @@ src/game/Map.s: src/game/Map.cpp.s
 # target to generate assembly for a file
 src/game/Map.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game/Map.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/game/Map.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/game/Map.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/game/Map.cpp.s
 .PHONY : src/game/Map.cpp.s
@@ -737,6 +822,7 @@ src/game/Neow.obj: src/game/Neow.cpp.obj
 # target to build an object file
 src/game/Neow.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game/Neow.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/game/Neow.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/game/Neow.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/game/Neow.cpp.obj
 .PHONY : src/game/Neow.cpp.obj
@@ -747,6 +833,7 @@ src/game/Neow.i: src/game/Neow.cpp.i
 # target to preprocess a source file
 src/game/Neow.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game/Neow.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/game/Neow.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/game/Neow.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/game/Neow.cpp.i
 .PHONY : src/game/Neow.cpp.i
@@ -757,6 +844,7 @@ src/game/Neow.s: src/game/Neow.cpp.s
 # target to generate assembly for a file
 src/game/Neow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game/Neow.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/game/Neow.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/game/Neow.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/game/Neow.cpp.s
 .PHONY : src/game/Neow.cpp.s
@@ -767,6 +855,7 @@ src/game/SaveFile.obj: src/game/SaveFile.cpp.obj
 # target to build an object file
 src/game/SaveFile.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game/SaveFile.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/game/SaveFile.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/game/SaveFile.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/game/SaveFile.cpp.obj
 .PHONY : src/game/SaveFile.cpp.obj
@@ -777,6 +866,7 @@ src/game/SaveFile.i: src/game/SaveFile.cpp.i
 # target to preprocess a source file
 src/game/SaveFile.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game/SaveFile.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/game/SaveFile.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/game/SaveFile.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/game/SaveFile.cpp.i
 .PHONY : src/game/SaveFile.cpp.i
@@ -787,6 +877,7 @@ src/game/SaveFile.s: src/game/SaveFile.cpp.s
 # target to generate assembly for a file
 src/game/SaveFile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game/SaveFile.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/game/SaveFile.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/game/SaveFile.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/game/SaveFile.cpp.s
 .PHONY : src/game/SaveFile.cpp.s
@@ -797,6 +888,7 @@ src/game/Shop.obj: src/game/Shop.cpp.obj
 # target to build an object file
 src/game/Shop.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game/Shop.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/game/Shop.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/game/Shop.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/game/Shop.cpp.obj
 .PHONY : src/game/Shop.cpp.obj
@@ -807,6 +899,7 @@ src/game/Shop.i: src/game/Shop.cpp.i
 # target to preprocess a source file
 src/game/Shop.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game/Shop.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/game/Shop.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/game/Shop.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/game/Shop.cpp.i
 .PHONY : src/game/Shop.cpp.i
@@ -817,6 +910,7 @@ src/game/Shop.s: src/game/Shop.cpp.s
 # target to generate assembly for a file
 src/game/Shop.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game/Shop.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/game/Shop.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/game/Shop.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/game/Shop.cpp.s
 .PHONY : src/game/Shop.cpp.s
@@ -827,6 +921,7 @@ src/sim/BattleSimulator.obj: src/sim/BattleSimulator.cpp.obj
 # target to build an object file
 src/sim/BattleSimulator.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/BattleSimulator.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/BattleSimulator.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/BattleSimulator.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/BattleSimulator.cpp.obj
 .PHONY : src/sim/BattleSimulator.cpp.obj
@@ -837,6 +932,7 @@ src/sim/BattleSimulator.i: src/sim/BattleSimulator.cpp.i
 # target to preprocess a source file
 src/sim/BattleSimulator.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/BattleSimulator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/BattleSimulator.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/BattleSimulator.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/BattleSimulator.cpp.i
 .PHONY : src/sim/BattleSimulator.cpp.i
@@ -847,6 +943,7 @@ src/sim/BattleSimulator.s: src/sim/BattleSimulator.cpp.s
 # target to generate assembly for a file
 src/sim/BattleSimulator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/BattleSimulator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/BattleSimulator.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/BattleSimulator.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/BattleSimulator.cpp.s
 .PHONY : src/sim/BattleSimulator.cpp.s
@@ -857,6 +954,7 @@ src/sim/ConsoleSimulator.obj: src/sim/ConsoleSimulator.cpp.obj
 # target to build an object file
 src/sim/ConsoleSimulator.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/ConsoleSimulator.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/ConsoleSimulator.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/ConsoleSimulator.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/ConsoleSimulator.cpp.obj
 .PHONY : src/sim/ConsoleSimulator.cpp.obj
@@ -867,6 +965,7 @@ src/sim/ConsoleSimulator.i: src/sim/ConsoleSimulator.cpp.i
 # target to preprocess a source file
 src/sim/ConsoleSimulator.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/ConsoleSimulator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/ConsoleSimulator.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/ConsoleSimulator.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/ConsoleSimulator.cpp.i
 .PHONY : src/sim/ConsoleSimulator.cpp.i
@@ -877,6 +976,7 @@ src/sim/ConsoleSimulator.s: src/sim/ConsoleSimulator.cpp.s
 # target to generate assembly for a file
 src/sim/ConsoleSimulator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/ConsoleSimulator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/ConsoleSimulator.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/ConsoleSimulator.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/ConsoleSimulator.cpp.s
 .PHONY : src/sim/ConsoleSimulator.cpp.s
@@ -887,6 +987,7 @@ src/sim/PrintHelpers.obj: src/sim/PrintHelpers.cpp.obj
 # target to build an object file
 src/sim/PrintHelpers.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/PrintHelpers.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/PrintHelpers.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/PrintHelpers.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/PrintHelpers.cpp.obj
 .PHONY : src/sim/PrintHelpers.cpp.obj
@@ -897,6 +998,7 @@ src/sim/PrintHelpers.i: src/sim/PrintHelpers.cpp.i
 # target to preprocess a source file
 src/sim/PrintHelpers.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/PrintHelpers.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/PrintHelpers.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/PrintHelpers.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/PrintHelpers.cpp.i
 .PHONY : src/sim/PrintHelpers.cpp.i
@@ -907,6 +1009,7 @@ src/sim/PrintHelpers.s: src/sim/PrintHelpers.cpp.s
 # target to generate assembly for a file
 src/sim/PrintHelpers.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/PrintHelpers.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/PrintHelpers.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/PrintHelpers.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/PrintHelpers.cpp.s
 .PHONY : src/sim/PrintHelpers.cpp.s
@@ -917,6 +1020,7 @@ src/sim/SimHelpers.obj: src/sim/SimHelpers.cpp.obj
 # target to build an object file
 src/sim/SimHelpers.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/SimHelpers.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/SimHelpers.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/SimHelpers.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/SimHelpers.cpp.obj
 .PHONY : src/sim/SimHelpers.cpp.obj
@@ -927,6 +1031,7 @@ src/sim/SimHelpers.i: src/sim/SimHelpers.cpp.i
 # target to preprocess a source file
 src/sim/SimHelpers.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/SimHelpers.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/SimHelpers.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/SimHelpers.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/SimHelpers.cpp.i
 .PHONY : src/sim/SimHelpers.cpp.i
@@ -937,6 +1042,7 @@ src/sim/SimHelpers.s: src/sim/SimHelpers.cpp.s
 # target to generate assembly for a file
 src/sim/SimHelpers.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/SimHelpers.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/SimHelpers.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/SimHelpers.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/SimHelpers.cpp.s
 .PHONY : src/sim/SimHelpers.cpp.s
@@ -947,6 +1053,7 @@ src/sim/search/Action.obj: src/sim/search/Action.cpp.obj
 # target to build an object file
 src/sim/search/Action.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/search/Action.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/search/Action.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/search/Action.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/search/Action.cpp.obj
 .PHONY : src/sim/search/Action.cpp.obj
@@ -957,6 +1064,7 @@ src/sim/search/Action.i: src/sim/search/Action.cpp.i
 # target to preprocess a source file
 src/sim/search/Action.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/search/Action.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/search/Action.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/search/Action.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/search/Action.cpp.i
 .PHONY : src/sim/search/Action.cpp.i
@@ -967,6 +1075,7 @@ src/sim/search/Action.s: src/sim/search/Action.cpp.s
 # target to generate assembly for a file
 src/sim/search/Action.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/search/Action.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/search/Action.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/search/Action.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/search/Action.cpp.s
 .PHONY : src/sim/search/Action.cpp.s
@@ -977,6 +1086,7 @@ src/sim/search/BattleScumSearcher2.obj: src/sim/search/BattleScumSearcher2.cpp.o
 # target to build an object file
 src/sim/search/BattleScumSearcher2.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/search/BattleScumSearcher2.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/search/BattleScumSearcher2.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/search/BattleScumSearcher2.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/search/BattleScumSearcher2.cpp.obj
 .PHONY : src/sim/search/BattleScumSearcher2.cpp.obj
@@ -987,6 +1097,7 @@ src/sim/search/BattleScumSearcher2.i: src/sim/search/BattleScumSearcher2.cpp.i
 # target to preprocess a source file
 src/sim/search/BattleScumSearcher2.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/search/BattleScumSearcher2.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/search/BattleScumSearcher2.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/search/BattleScumSearcher2.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/search/BattleScumSearcher2.cpp.i
 .PHONY : src/sim/search/BattleScumSearcher2.cpp.i
@@ -997,6 +1108,7 @@ src/sim/search/BattleScumSearcher2.s: src/sim/search/BattleScumSearcher2.cpp.s
 # target to generate assembly for a file
 src/sim/search/BattleScumSearcher2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/search/BattleScumSearcher2.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/search/BattleScumSearcher2.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/search/BattleScumSearcher2.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/search/BattleScumSearcher2.cpp.s
 .PHONY : src/sim/search/BattleScumSearcher2.cpp.s
@@ -1007,6 +1119,7 @@ src/sim/search/ExpertKnowledge.obj: src/sim/search/ExpertKnowledge.cpp.obj
 # target to build an object file
 src/sim/search/ExpertKnowledge.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/search/ExpertKnowledge.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/search/ExpertKnowledge.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/search/ExpertKnowledge.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/search/ExpertKnowledge.cpp.obj
 .PHONY : src/sim/search/ExpertKnowledge.cpp.obj
@@ -1017,6 +1130,7 @@ src/sim/search/ExpertKnowledge.i: src/sim/search/ExpertKnowledge.cpp.i
 # target to preprocess a source file
 src/sim/search/ExpertKnowledge.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/search/ExpertKnowledge.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/search/ExpertKnowledge.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/search/ExpertKnowledge.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/search/ExpertKnowledge.cpp.i
 .PHONY : src/sim/search/ExpertKnowledge.cpp.i
@@ -1027,6 +1141,7 @@ src/sim/search/ExpertKnowledge.s: src/sim/search/ExpertKnowledge.cpp.s
 # target to generate assembly for a file
 src/sim/search/ExpertKnowledge.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/search/ExpertKnowledge.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/search/ExpertKnowledge.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/search/ExpertKnowledge.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/search/ExpertKnowledge.cpp.s
 .PHONY : src/sim/search/ExpertKnowledge.cpp.s
@@ -1037,6 +1152,7 @@ src/sim/search/GameAction.obj: src/sim/search/GameAction.cpp.obj
 # target to build an object file
 src/sim/search/GameAction.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/search/GameAction.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/search/GameAction.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/search/GameAction.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/search/GameAction.cpp.obj
 .PHONY : src/sim/search/GameAction.cpp.obj
@@ -1047,6 +1163,7 @@ src/sim/search/GameAction.i: src/sim/search/GameAction.cpp.i
 # target to preprocess a source file
 src/sim/search/GameAction.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/search/GameAction.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/search/GameAction.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/search/GameAction.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/search/GameAction.cpp.i
 .PHONY : src/sim/search/GameAction.cpp.i
@@ -1057,6 +1174,7 @@ src/sim/search/GameAction.s: src/sim/search/GameAction.cpp.s
 # target to generate assembly for a file
 src/sim/search/GameAction.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/search/GameAction.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/search/GameAction.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/search/GameAction.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/search/GameAction.cpp.s
 .PHONY : src/sim/search/GameAction.cpp.s
@@ -1067,6 +1185,7 @@ src/sim/search/ScumSearchAgent2.obj: src/sim/search/ScumSearchAgent2.cpp.obj
 # target to build an object file
 src/sim/search/ScumSearchAgent2.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/search/ScumSearchAgent2.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/search/ScumSearchAgent2.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/search/ScumSearchAgent2.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/search/ScumSearchAgent2.cpp.obj
 .PHONY : src/sim/search/ScumSearchAgent2.cpp.obj
@@ -1077,6 +1196,7 @@ src/sim/search/ScumSearchAgent2.i: src/sim/search/ScumSearchAgent2.cpp.i
 # target to preprocess a source file
 src/sim/search/ScumSearchAgent2.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/search/ScumSearchAgent2.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/search/ScumSearchAgent2.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/search/ScumSearchAgent2.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/search/ScumSearchAgent2.cpp.i
 .PHONY : src/sim/search/ScumSearchAgent2.cpp.i
@@ -1087,6 +1207,7 @@ src/sim/search/ScumSearchAgent2.s: src/sim/search/ScumSearchAgent2.cpp.s
 # target to generate assembly for a file
 src/sim/search/ScumSearchAgent2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/search/ScumSearchAgent2.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/search/ScumSearchAgent2.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/search/ScumSearchAgent2.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/search/ScumSearchAgent2.cpp.s
 .PHONY : src/sim/search/ScumSearchAgent2.cpp.s
@@ -1097,6 +1218,7 @@ src/sim/search/SimpleAgent.obj: src/sim/search/SimpleAgent.cpp.obj
 # target to build an object file
 src/sim/search/SimpleAgent.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/search/SimpleAgent.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/search/SimpleAgent.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/search/SimpleAgent.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/search/SimpleAgent.cpp.obj
 .PHONY : src/sim/search/SimpleAgent.cpp.obj
@@ -1107,6 +1229,7 @@ src/sim/search/SimpleAgent.i: src/sim/search/SimpleAgent.cpp.i
 # target to preprocess a source file
 src/sim/search/SimpleAgent.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/search/SimpleAgent.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/search/SimpleAgent.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/search/SimpleAgent.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/search/SimpleAgent.cpp.i
 .PHONY : src/sim/search/SimpleAgent.cpp.i
@@ -1117,9 +1240,43 @@ src/sim/search/SimpleAgent.s: src/sim/search/SimpleAgent.cpp.s
 # target to generate assembly for a file
 src/sim/search/SimpleAgent.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/search/SimpleAgent.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/search/SimpleAgent.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/search/SimpleAgent.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/search/SimpleAgent.cpp.s
 .PHONY : src/sim/search/SimpleAgent.cpp.s
+
+src/sim/search/SpireAgent.obj: src/sim/search/SpireAgent.cpp.obj
+.PHONY : src/sim/search/SpireAgent.obj
+
+# target to build an object file
+src/sim/search/SpireAgent.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/search/SpireAgent.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/search/SpireAgent.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/search/SpireAgent.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/search/SpireAgent.cpp.obj
+.PHONY : src/sim/search/SpireAgent.cpp.obj
+
+src/sim/search/SpireAgent.i: src/sim/search/SpireAgent.cpp.i
+.PHONY : src/sim/search/SpireAgent.i
+
+# target to preprocess a source file
+src/sim/search/SpireAgent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/search/SpireAgent.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/search/SpireAgent.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/search/SpireAgent.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/search/SpireAgent.cpp.i
+.PHONY : src/sim/search/SpireAgent.cpp.i
+
+src/sim/search/SpireAgent.s: src/sim/search/SpireAgent.cpp.s
+.PHONY : src/sim/search/SpireAgent.s
+
+# target to generate assembly for a file
+src/sim/search/SpireAgent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/search/SpireAgent.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/search/SpireAgent.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/search/SpireAgent.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/search/SpireAgent.cpp.s
+.PHONY : src/sim/search/SpireAgent.cpp.s
 
 # Help Target
 help:
@@ -1132,6 +1289,7 @@ help:
 	@echo ... main
 	@echo ... small-test
 	@echo ... test
+	@echo ... train
 	@echo ... apps/main.obj
 	@echo ... apps/main.i
 	@echo ... apps/main.s
@@ -1141,6 +1299,9 @@ help:
 	@echo ... apps/test.obj
 	@echo ... apps/test.i
 	@echo ... apps/test.s
+	@echo ... apps/train.obj
+	@echo ... apps/train.i
+	@echo ... apps/train.s
 	@echo ... bindings/bindings-util.obj
 	@echo ... bindings/bindings-util.i
 	@echo ... bindings/bindings-util.s
@@ -1231,6 +1392,9 @@ help:
 	@echo ... src/sim/search/SimpleAgent.obj
 	@echo ... src/sim/search/SimpleAgent.i
 	@echo ... src/sim/search/SimpleAgent.s
+	@echo ... src/sim/search/SpireAgent.obj
+	@echo ... src/sim/search/SpireAgent.i
+	@echo ... src/sim/search/SpireAgent.s
 .PHONY : help
 
 

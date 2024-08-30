@@ -17,6 +17,11 @@ target_link_directories(main PRIVATE json::nlohmann_json)
 target_include_directories(main PUBLIC include)
 target_include_directories(main PUBLIC json/include)
 
+add_executable(train apps/train.cpp ${sts_lightspeed_SOURCES})
+target_link_directories(train PRIVATE json::nlohmann_json)
+target_include_directories(train PUBLIC include)
+target_include_directories(train PUBLIC json/include)
+
 add_executable(test apps/test.cpp ${sts_lightspeed_SOURCES})
 target_include_directories(test PUBLIC include)
 target_link_directories(test PUBLIC json::nlohmann_json)

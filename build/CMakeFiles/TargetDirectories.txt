@@ -1,4 +1,5 @@
 C:/dev/sts_lightspeed/build/CMakeFiles/main.dir
+C:/dev/sts_lightspeed/build/CMakeFiles/train.dir
 C:/dev/sts_lightspeed/build/CMakeFiles/test.dir
 C:/dev/sts_lightspeed/build/CMakeFiles/small-test.dir
 C:/dev/sts_lightspeed/build/CMakeFiles/edit_cache.dir
