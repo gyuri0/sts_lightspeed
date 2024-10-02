@@ -1245,38 +1245,38 @@ src/sim/search/SimpleAgent.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/search/SimpleAgent.cpp.s
 .PHONY : src/sim/search/SimpleAgent.cpp.s
 
-src/sim/search/SpireAgent.obj: src/sim/search/SpireAgent.cpp.obj
-.PHONY : src/sim/search/SpireAgent.obj
+src/sim/search/TrainAgent.obj: src/sim/search/TrainAgent.cpp.obj
+.PHONY : src/sim/search/TrainAgent.obj
 
 # target to build an object file
-src/sim/search/SpireAgent.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/search/SpireAgent.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/search/SpireAgent.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/search/SpireAgent.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/search/SpireAgent.cpp.obj
-.PHONY : src/sim/search/SpireAgent.cpp.obj
+src/sim/search/TrainAgent.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/search/TrainAgent.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/search/TrainAgent.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/search/TrainAgent.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/search/TrainAgent.cpp.obj
+.PHONY : src/sim/search/TrainAgent.cpp.obj
 
-src/sim/search/SpireAgent.i: src/sim/search/SpireAgent.cpp.i
-.PHONY : src/sim/search/SpireAgent.i
+src/sim/search/TrainAgent.i: src/sim/search/TrainAgent.cpp.i
+.PHONY : src/sim/search/TrainAgent.i
 
 # target to preprocess a source file
-src/sim/search/SpireAgent.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/search/SpireAgent.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/search/SpireAgent.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/search/SpireAgent.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/search/SpireAgent.cpp.i
-.PHONY : src/sim/search/SpireAgent.cpp.i
+src/sim/search/TrainAgent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/search/TrainAgent.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/search/TrainAgent.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/search/TrainAgent.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/search/TrainAgent.cpp.i
+.PHONY : src/sim/search/TrainAgent.cpp.i
 
-src/sim/search/SpireAgent.s: src/sim/search/SpireAgent.cpp.s
-.PHONY : src/sim/search/SpireAgent.s
+src/sim/search/TrainAgent.s: src/sim/search/TrainAgent.cpp.s
+.PHONY : src/sim/search/TrainAgent.s
 
 # target to generate assembly for a file
-src/sim/search/SpireAgent.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/search/SpireAgent.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/search/SpireAgent.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/search/SpireAgent.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/search/SpireAgent.cpp.s
-.PHONY : src/sim/search/SpireAgent.cpp.s
+src/sim/search/TrainAgent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/sim/search/TrainAgent.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\train.dir\build.make CMakeFiles/train.dir/src/sim/search/TrainAgent.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/sim/search/TrainAgent.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\small-test.dir\build.make CMakeFiles/small-test.dir/src/sim/search/TrainAgent.cpp.s
+.PHONY : src/sim/search/TrainAgent.cpp.s
 
 # Help Target
 help:
@@ -1392,9 +1392,9 @@ help:
 	@echo ... src/sim/search/SimpleAgent.obj
 	@echo ... src/sim/search/SimpleAgent.i
 	@echo ... src/sim/search/SimpleAgent.s
-	@echo ... src/sim/search/SpireAgent.obj
-	@echo ... src/sim/search/SpireAgent.i
-	@echo ... src/sim/search/SpireAgent.s
+	@echo ... src/sim/search/TrainAgent.obj
+	@echo ... src/sim/search/TrainAgent.i
+	@echo ... src/sim/search/TrainAgent.s
 .PHONY : help
 
 

@@ -34,7 +34,7 @@ set(OLD_GLOB
   "C:/dev/sts_lightspeed/src/sim/search/GameAction.cpp"
   "C:/dev/sts_lightspeed/src/sim/search/ScumSearchAgent2.cpp"
   "C:/dev/sts_lightspeed/src/sim/search/SimpleAgent.cpp"
-  "C:/dev/sts_lightspeed/src/sim/search/SpireAgent.cpp"
+  "C:/dev/sts_lightspeed/src/sim/search/TrainAgent.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

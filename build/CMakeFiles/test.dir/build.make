@@ -518,20 +518,20 @@ CMakeFiles/test.dir/src/sim/search/SimpleAgent.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/sim/search/SimpleAgent.cpp.s"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\dev\sts_lightspeed\src\sim\search\SimpleAgent.cpp -o CMakeFiles\test.dir\src\sim\search\SimpleAgent.cpp.s
 
-CMakeFiles/test.dir/src/sim/search/SpireAgent.cpp.obj: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/src/sim/search/SpireAgent.cpp.obj: CMakeFiles/test.dir/includes_CXX.rsp
-CMakeFiles/test.dir/src/sim/search/SpireAgent.cpp.obj: C:/dev/sts_lightspeed/src/sim/search/SpireAgent.cpp
-CMakeFiles/test.dir/src/sim/search/SpireAgent.cpp.obj: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\dev\sts_lightspeed\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/test.dir/src/sim/search/SpireAgent.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/sim/search/SpireAgent.cpp.obj -MF CMakeFiles\test.dir\src\sim\search\SpireAgent.cpp.obj.d -o CMakeFiles\test.dir\src\sim\search\SpireAgent.cpp.obj -c C:\dev\sts_lightspeed\src\sim\search\SpireAgent.cpp
+CMakeFiles/test.dir/src/sim/search/TrainAgent.cpp.obj: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/sim/search/TrainAgent.cpp.obj: CMakeFiles/test.dir/includes_CXX.rsp
+CMakeFiles/test.dir/src/sim/search/TrainAgent.cpp.obj: C:/dev/sts_lightspeed/src/sim/search/TrainAgent.cpp
+CMakeFiles/test.dir/src/sim/search/TrainAgent.cpp.obj: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\dev\sts_lightspeed\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/test.dir/src/sim/search/TrainAgent.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/sim/search/TrainAgent.cpp.obj -MF CMakeFiles\test.dir\src\sim\search\TrainAgent.cpp.obj.d -o CMakeFiles\test.dir\src\sim\search\TrainAgent.cpp.obj -c C:\dev\sts_lightspeed\src\sim\search\TrainAgent.cpp
 
-CMakeFiles/test.dir/src/sim/search/SpireAgent.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/src/sim/search/SpireAgent.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\dev\sts_lightspeed\src\sim\search\SpireAgent.cpp > CMakeFiles\test.dir\src\sim\search\SpireAgent.cpp.i
+CMakeFiles/test.dir/src/sim/search/TrainAgent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/src/sim/search/TrainAgent.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\dev\sts_lightspeed\src\sim\search\TrainAgent.cpp > CMakeFiles\test.dir\src\sim\search\TrainAgent.cpp.i
 
-CMakeFiles/test.dir/src/sim/search/SpireAgent.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/sim/search/SpireAgent.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\dev\sts_lightspeed\src\sim\search\SpireAgent.cpp -o CMakeFiles\test.dir\src\sim\search\SpireAgent.cpp.s
+CMakeFiles/test.dir/src/sim/search/TrainAgent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/sim/search/TrainAgent.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\dev\sts_lightspeed\src\sim\search\TrainAgent.cpp -o CMakeFiles\test.dir\src\sim\search\TrainAgent.cpp.s
 
 # Object files for target test
 test_OBJECTS = \
@@ -565,7 +565,7 @@ test_OBJECTS = \
 "CMakeFiles/test.dir/src/sim/search/GameAction.cpp.obj" \
 "CMakeFiles/test.dir/src/sim/search/ScumSearchAgent2.cpp.obj" \
 "CMakeFiles/test.dir/src/sim/search/SimpleAgent.cpp.obj" \
-"CMakeFiles/test.dir/src/sim/search/SpireAgent.cpp.obj"
+"CMakeFiles/test.dir/src/sim/search/TrainAgent.cpp.obj"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
@@ -600,7 +600,7 @@ test.exe: CMakeFiles/test.dir/src/sim/search/ExpertKnowledge.cpp.obj
 test.exe: CMakeFiles/test.dir/src/sim/search/GameAction.cpp.obj
 test.exe: CMakeFiles/test.dir/src/sim/search/ScumSearchAgent2.cpp.obj
 test.exe: CMakeFiles/test.dir/src/sim/search/SimpleAgent.cpp.obj
-test.exe: CMakeFiles/test.dir/src/sim/search/SpireAgent.cpp.obj
+test.exe: CMakeFiles/test.dir/src/sim/search/TrainAgent.cpp.obj
 test.exe: CMakeFiles/test.dir/build.make
 test.exe: CMakeFiles/test.dir/linkLibs.rsp
 test.exe: CMakeFiles/test.dir/objects1.rsp

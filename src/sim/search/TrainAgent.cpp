@@ -4,6 +4,7 @@
 
 #include <sim/search/TrainAgent.h>
 #include <game/Game.h>
+#include <game/GameJsonSerializer.h>
 #include "sim/PrintHelpers.h"
 
 #include <map>
@@ -12,8 +13,10 @@
 #include <thread>
 #include <mutex>
 #include <algorithm>
+#include <nlohmann/json.hpp>
 
 using namespace sts;
+using json = nlohmann::json;
 
 static bool haveInitMaps = false;
 static int cardPriorityMap[372] {};
@@ -30,13 +33,13 @@ static constexpr int mapWeights[3][6] = {
 };
 
 
-void initMaps();
+void initMaps_train();
 
-bool shouldSkip(CardId id) {
+bool shouldSkip_train(CardId id) {
     return cardPriorityMap[static_cast<int>(id)] > cardPriorityMap[static_cast<int>(CardId::ANGER)];
 }
 
-int getHighHpMonster(const BattleContext &bc) {
+int getHighHpMonster_train(const BattleContext &bc) {
     int highHp = -1;
     int highIdx = -1;
     for (int i = 0; i < bc.monsters.monsterCount; ++i) {
@@ -48,7 +51,7 @@ int getHighHpMonster(const BattleContext &bc) {
     return highIdx;
 }
 
-int getLowHpMonster(const BattleContext &bc) {
+int getLowHpMonster_train(const BattleContext &bc) {
     int lowHp = 10000;
     int lowIdx = -1;
     for (int i = 0; i < bc.monsters.monsterCount; ++i) {
@@ -60,7 +63,7 @@ int getLowHpMonster(const BattleContext &bc) {
     return lowIdx;
 }
 
-int getBestCardToPlay(const BattleContext &bc, fixed_list<int,10> handIdxs) {
+int getBestCardToPlay_train(const BattleContext &bc, fixed_list<int,10> handIdxs) {
     int bestPriority = 10000;
     int bestHandIdx;
     for (int i = 0; i < handIdxs.size(); ++i) {
@@ -74,7 +77,7 @@ int getBestCardToPlay(const BattleContext &bc, fixed_list<int,10> handIdxs) {
     return bestHandIdx;
 }
 
-void sortCardOptions(const GameContext &gc, fixed_list<int,96> &sortedCardIdxs) {
+void sortCardOptions_train(const GameContext &gc, fixed_list<int,96> &sortedCardIdxs) {
     sortedCardIdxs.clear();
     for (int i = 0; i < gc.info.toSelectCards.size(); ++i) {
         sortedCardIdxs.push_back(i);
@@ -245,7 +248,7 @@ static void printHelper(const BattleContext &bc, const search::Action &a) {
 }
 
 search::TrainAgent::TrainAgent() {
-    initMaps();
+    initMaps_train();
 }
 
 void search::TrainAgent::takeAction(GameContext &gc, search::GameAction a) {
@@ -299,7 +302,7 @@ bool search::TrainAgent::playPotion(BattleContext &bc) {
                 if (bc.monsters.getTargetableCount() <= 0) {
                     continue;
                 }
-                target = getHighHpMonster(bc);
+                target = getHighHpMonster_train(bc);
 
             } else {
 
@@ -397,16 +400,16 @@ void search::TrainAgent::stepBattleCardPlay(BattleContext &bc) {
 
     int bestCardIdx = playableCardsIdxs.front();
     if (!zeroCostNonAttacks.empty()) {
-        bestCardIdx = getBestCardToPlay(bc, zeroCostNonAttacks);
+        bestCardIdx = getBestCardToPlay_train(bc, zeroCostNonAttacks);
 
     } else if (!nonZeroCostCards.empty()) {
-        bestCardIdx = getBestCardToPlay(bc, nonZeroCostCards);
+        bestCardIdx = getBestCardToPlay_train(bc, nonZeroCostCards);
         if (!aoeCards.empty() && bc.monsters.monstersAlive > 1 && bc.cards.hand[bestCardIdx].getType() == CardType::ATTACK) {
-            bestCardIdx = getBestCardToPlay(bc, aoeCards);
+            bestCardIdx = getBestCardToPlay_train(bc, aoeCards);
         }
 
     } else if (!zeroCostAttacks.empty()) {
-        bestCardIdx = getBestCardToPlay(bc, zeroCostAttacks);
+        bestCardIdx = getBestCardToPlay_train(bc, zeroCostAttacks);
 
     } else {
         takeAction(bc, Action(ActionType::END_TURN));
@@ -421,9 +424,9 @@ void search::TrainAgent::stepBattleCardPlay(BattleContext &bc) {
 
     int targetIdx;
     if (c.getType() == CardType::ATTACK) {
-         targetIdx = getLowHpMonster(bc);
+         targetIdx = getLowHpMonster_train(bc);
     } else {
-        targetIdx = getHighHpMonster(bc);
+        targetIdx = getHighHpMonster_train(bc);
     }
     takeAction(bc, Action(ActionType::CARD, bestCardIdx, targetIdx));
 }
@@ -584,21 +587,23 @@ void search::TrainAgent::stepOutOfCombat(GameContext &gc) {
 
         case ScreenState::CARD_SELECT: {
             fixed_list<int,96> sortedCardIdxs;
-            sortCardOptions(gc, sortedCardIdxs);
+            sortCardOptions_train(gc, sortedCardIdxs);
             takeAction(gc, sortedCardIdxs[0]);
             break;
         }
 
         case ScreenState::MAP_SCREEN: {
-            if (gc.act == 4) {
-                takeAction(gc, 3);
-            }
+            json gameState = toJson(gc);
 
-            if (gc.curMapNodeY < 0) {
-                mapPath = getBestMapPathForWeights(*gc.map, mapWeights[gc.act-1]);
-            }
+            //if (gc.act == 4) {
+                //takeAction(gc, 3);
+            //}
 
-            takeAction(gc, mapPath[gc.curMapNodeY+1]);
+            //if (gc.curMapNodeY < 0) {
+                //mapPath = getBestMapPathForWeights(*gc.map, mapWeights[gc.act-1]);
+            //}
+
+            //takeAction(gc, mapPath[gc.curMapNodeY+1]);
             break;
         }
 
@@ -754,7 +759,7 @@ void search::TrainAgent::stepShopScreen(GameContext &gc) {
     for (int i = 0; i < 7; ++i) {
         if (s.cardPrice(i) == -1 ||
             gc.gold < s.cardPrice(i) ||
-            shouldSkip(s.cards[i].getId()))
+            shouldSkip_train(s.cards[i].getId()))
         {
             continue;
         }
@@ -1091,7 +1096,7 @@ constexpr std::array<RelicId,24> bossRelicPriorities = {
 };
 
 
-void initMaps() {
+void initMaps_train() {
     // there are synchronization issues with this if multiple threads start at once
     if (haveInitMaps) {
         return;

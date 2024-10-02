@@ -1,6 +1,6 @@
 CMakeFiles/train.dir/apps/train.cpp.obj: \
  C:\dev\sts_lightspeed\apps\train.cpp \
- C:/dev/sts_lightspeed/include/sim/search/SimpleAgent.h \
+ C:/dev/sts_lightspeed/include/sim/search/TrainAgent.h \
  C:/dev/sts_lightspeed/include/game/GameContext.h \
  C:/msys64/ucrt64/include/c++/14.1.0/vector \
  C:/msys64/ucrt64/include/c++/14.1.0/bits/requires_hosted.h \

@@ -181,9 +181,9 @@
 },
 {
   "directory": "C:/dev/sts_lightspeed/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\main.dir\\src\\sim\\search\\SpireAgent.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\sim\\search\\SpireAgent.cpp",
-  "file": "C:/dev/sts_lightspeed/src/sim/search/SpireAgent.cpp",
-  "output": "CMakeFiles/main.dir/src/sim/search/SpireAgent.cpp.obj"
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\main.dir\\src\\sim\\search\\TrainAgent.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\sim\\search\\TrainAgent.cpp",
+  "file": "C:/dev/sts_lightspeed/src/sim/search/TrainAgent.cpp",
+  "output": "CMakeFiles/main.dir/src/sim/search/TrainAgent.cpp.obj"
 },
 {
   "directory": "C:/dev/sts_lightspeed/build",
@@ -367,9 +367,9 @@
 },
 {
   "directory": "C:/dev/sts_lightspeed/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\sim\\search\\SpireAgent.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\sim\\search\\SpireAgent.cpp",
-  "file": "C:/dev/sts_lightspeed/src/sim/search/SpireAgent.cpp",
-  "output": "CMakeFiles/train.dir/src/sim/search/SpireAgent.cpp.obj"
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/train.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\train.dir\\src\\sim\\search\\TrainAgent.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\sim\\search\\TrainAgent.cpp",
+  "file": "C:/dev/sts_lightspeed/src/sim/search/TrainAgent.cpp",
+  "output": "CMakeFiles/train.dir/src/sim/search/TrainAgent.cpp.obj"
 },
 {
   "directory": "C:/dev/sts_lightspeed/build",
@@ -553,9 +553,9 @@
 },
 {
   "directory": "C:/dev/sts_lightspeed/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/test.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\test.dir\\src\\sim\\search\\SpireAgent.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\sim\\search\\SpireAgent.cpp",
-  "file": "C:/dev/sts_lightspeed/src/sim/search/SpireAgent.cpp",
-  "output": "CMakeFiles/test.dir/src/sim/search/SpireAgent.cpp.obj"
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/test.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\test.dir\\src\\sim\\search\\TrainAgent.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\sim\\search\\TrainAgent.cpp",
+  "file": "C:/dev/sts_lightspeed/src/sim/search/TrainAgent.cpp",
+  "output": "CMakeFiles/test.dir/src/sim/search/TrainAgent.cpp.obj"
 },
 {
   "directory": "C:/dev/sts_lightspeed/build",
@@ -745,8 +745,8 @@
 },
 {
   "directory": "C:/dev/sts_lightspeed/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/small-test.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\small-test.dir\\src\\sim\\search\\SpireAgent.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\sim\\search\\SpireAgent.cpp",
-  "file": "C:/dev/sts_lightspeed/src/sim/search/SpireAgent.cpp",
-  "output": "CMakeFiles/small-test.dir/src/sim/search/SpireAgent.cpp.obj"
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/small-test.dir/includes_CXX.rsp -Wno-shift-count-overflow -O3 -g -std=gnu++17 -o CMakeFiles\\small-test.dir\\src\\sim\\search\\TrainAgent.cpp.obj -c C:\\dev\\sts_lightspeed\\src\\sim\\search\\TrainAgent.cpp",
+  "file": "C:/dev/sts_lightspeed/src/sim/search/TrainAgent.cpp",
+  "output": "CMakeFiles/small-test.dir/src/sim/search/TrainAgent.cpp.obj"
 }
 ]

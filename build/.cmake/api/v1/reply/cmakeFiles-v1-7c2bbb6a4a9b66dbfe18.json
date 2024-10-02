@@ -1,0 +1,198 @@
+{
+	"globsDependent" : 
+	[
+		{
+			"expression" : "C:/dev/sts_lightspeed/src/*.cpp",
+			"paths" : 
+			[
+				"C:/dev/sts_lightspeed/src/combat/Actions.cpp",
+				"C:/dev/sts_lightspeed/src/combat/BattleContext.cpp",
+				"C:/dev/sts_lightspeed/src/combat/CardInstance.cpp",
+				"C:/dev/sts_lightspeed/src/combat/CardManager.cpp",
+				"C:/dev/sts_lightspeed/src/combat/CardQueue.cpp",
+				"C:/dev/sts_lightspeed/src/combat/Monster.cpp",
+				"C:/dev/sts_lightspeed/src/combat/MonsterGroup.cpp",
+				"C:/dev/sts_lightspeed/src/combat/MonsterMoveDamage.cpp",
+				"C:/dev/sts_lightspeed/src/combat/MonsterSpecific.cpp",
+				"C:/dev/sts_lightspeed/src/combat/Player.cpp",
+				"C:/dev/sts_lightspeed/src/game/Card.cpp",
+				"C:/dev/sts_lightspeed/src/game/CombatReward.cpp",
+				"C:/dev/sts_lightspeed/src/game/Deck.cpp",
+				"C:/dev/sts_lightspeed/src/game/Game.cpp",
+				"C:/dev/sts_lightspeed/src/game/GameContext.cpp",
+				"C:/dev/sts_lightspeed/src/game/Map.cpp",
+				"C:/dev/sts_lightspeed/src/game/Neow.cpp",
+				"C:/dev/sts_lightspeed/src/game/SaveFile.cpp",
+				"C:/dev/sts_lightspeed/src/game/Shop.cpp",
+				"C:/dev/sts_lightspeed/src/sim/BattleSimulator.cpp",
+				"C:/dev/sts_lightspeed/src/sim/ConsoleSimulator.cpp",
+				"C:/dev/sts_lightspeed/src/sim/PrintHelpers.cpp",
+				"C:/dev/sts_lightspeed/src/sim/SimHelpers.cpp",
+				"C:/dev/sts_lightspeed/src/sim/search/Action.cpp",
+				"C:/dev/sts_lightspeed/src/sim/search/BattleScumSearcher2.cpp",
+				"C:/dev/sts_lightspeed/src/sim/search/ExpertKnowledge.cpp",
+				"C:/dev/sts_lightspeed/src/sim/search/GameAction.cpp",
+				"C:/dev/sts_lightspeed/src/sim/search/ScumSearchAgent2.cpp",
+				"C:/dev/sts_lightspeed/src/sim/search/SimpleAgent.cpp",
+				"C:/dev/sts_lightspeed/src/sim/search/TrainAgent.cpp"
+			],
+			"recurse" : true
+		}
+	],
+	"inputs" : 
+	[
+		{
+			"path" : "CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/3.30.2/CMakeSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/3.30.2/CMakeCXXCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeGenericSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeCXXInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-3.30/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/3.30.2/CMakeRCCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeRCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows-windres.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX-ABI.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"path" : "json/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-3.30/Modules/ExternalProject.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-3.30/Modules/ExternalProject/shared_internal_commands.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-3.30/Modules/GNUInstallDirs.cmake"
+		},
+		{
+			"path" : "json/cmake/pkg-config.pc.in"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakePackageConfigHelpers.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-3.30/Modules/WriteBasicConfigVersionFile.cmake"
+		},
+		{
+			"path" : "json/cmake/nlohmann_jsonConfigVersion.cmake.in"
+		},
+		{
+			"path" : "json/cmake/config.cmake.in"
+		}
+	],
+	"kind" : "cmakeFiles",
+	"paths" : 
+	{
+		"build" : "C:/dev/sts_lightspeed/build",
+		"source" : "C:/dev/sts_lightspeed"
+	},
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 1
+	}
+}
